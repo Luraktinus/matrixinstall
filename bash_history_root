@@ -1,0 +1,21 @@
+apt update
+apt upgrade
+sudo apt install lsb-release wget
+wget -q -O - https://packages.matrix.org/debian/matrix-org-archive-keyring.gpg | sudo tee /usr/share/keyrings/matrix-org-archive-keyring.gpg > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/matrix-org-archive-keyring.gpg] https://packages.matrix.org/debian/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/matrix-org.list
+sudo apt install software-properties-common
+sudo add-apt-repository https://matrix.org/packages/debian/
+sudo sh -c 'apt update && apt upgrade'
+sudo apt install matrix-synapse-py3
+sudo dpkg-reconfigure matrix-synapse-py3
+sudo systemctl start matrix-synapse.service
+sudo systemctl enable matrix-synapse.service
+sudo adduser 
+sudo adduser lue
+exit
+adduser -a -G 
+addgroup 
+addgroup wheel
+nano /etc/sudoers
+usermod -a -G sudo lue
+exit

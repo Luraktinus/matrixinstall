@@ -1,0 +1,66 @@
+sudo netstat -plntu
+su
+sudo netstat -plntu
+exit
+sudo netstat -plntu
+cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1
+sudo nano /etc/matrix-synapse/homeserver.yaml
+sudo systemctl reload matrix-synapse.service
+sudo netstat -plntu
+sudo apt install letsencrypt
+sudo systemctl stop nginx.service
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get install certbot python-certbot-nginx
+sudo certbot --nginx
+ping hurensohn24.tk
+wget https://git.ucode.space/ucodeArchiv/TS3-Proxy-Python/raw/commit/08564f114376a0789c5b1521e1d38cb81afcd1fb/ts.py
+ls
+python3 ts.py 1337:ucode.space:9987
+ping hurensohn24.tk
+watch ping hurensohn24.tk
+ping hurensohn24.tk
+watch ping hurensohn24.tk
+top
+sudo certbot --nginx
+sudo certbot renew --dry-run
+sudo apt install nginx
+sudo systemctl start nginx.service
+sudo systemctl enable nginx.service
+sudo nano /etc/nginx/sites-available/matrix
+sudo ln -s /etc/nginx/sites-available/matrix /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo nano /etc/nginx/sites-enabled/default 
+sudo rm /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo systemctl restart nginx.service
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow 8448
+sudo ufw enable
+sudo ufw status
+register_new_matrix_user -c /etc/matrix-synapse/homeserver.yaml http://localhost:8008
+cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1
+sudo nano /etc/matrix-synapse/homeserver.yaml
+sudo systemctl reload matrix-synapse.service
+register_new_matrix_user -c /etc/matrix-synapse/homeserver.yaml http://localhost:8008
+sudo nano /etc/matrix-synapse/homeserver.yaml
+sudo systemctl reload matrix-synapse.service
+register_new_matrix_user -c /etc/matrix-synapse/homeserver.yaml http://localhost:8008
+sudo nano /etc/matrix-synapse/homeserver.yaml
+sudo dpkg-reconfigure matrix-synapse-py3 
+sudo nano /etc/matrix-synapse/homeserver.yaml
+sudo systemctl reload matrix-synapse.service
+sudo systemctl status matrix-synapse.service 
+register_new_matrix_user -c /etc/matrix-synapse/homeserver.yaml http://localhost:8008
+cd /etc/matrix-synapse/
+ls
+python -m synapse.app.homeserver     --server-name my.domain.name     --config-path homeserver.yaml     --generate-config \
+python -m synapse.app.homeserver --server-name hurensohn.tk --config-path homeserver.yaml --generate-config --report-stats=yes
+sudo nano /etc/matrix-synapse/homeserver.yaml
+sudo systemctl reload matrix-synapse.service
+register_new_matrix_user -c /etc/matrix-synapse/homeserver.yaml http://localhost:8008
+sudo systemctl reload matrix-synapse.service
+sudo systemctl status matrix-synapse.service 
+reboot
+sudo reboot
